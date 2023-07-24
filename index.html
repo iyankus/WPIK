@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Ikon 32x32 piksel -->
+    <link rel="icon" type="image/png" href="assets/img/img-title.png" sizes="32x32">
+    <title>Iyan | Portfolio</title>
+
+    <!-- Mailing -->
+    <script src="assets/js/mail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("BrZJII9XiINAPpNxF");
+        })();
+    </script>
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Iyan</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#analize" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Analize
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/iyan-kusmianto-650633145/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.instagram.com/iyankus_" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://github.com/iyankus" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path
+                                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+
+                                <image class="home__blob-img" x='30' y='16' xlink:href="assets/img/perfil.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm Iyan</h1>
+                        <h3 class="home__subtitle">Financial Analyst</h3>
+                        <p class="home__description">Professional experience in financial analysis and management
+                            knowledge, producing efficient performance.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact me <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">
+                        Financial analyst, with reliable knowledge and professional experience, working in financial
+                        management and predicting
+                        financial distress, provide the best work.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">18+</span>
+                            <span class="about__info-name">Completed <br> project</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">3+</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/Iyan-CV.pdf" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My core expertise</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-chart-line skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Financial Analysis</h1>
+                                <span class="skills__subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Company Level</h3>
+                                    <span class="skills__number">95%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__cl"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Industry Level</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__il"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Macro Level</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__ml"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--==================== SKILLS 2 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-coins skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Financial Management</h1>
+                                <span class="skills__subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Corporate Financial</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__cf"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Strategic Financial</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sf"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Operational Financial</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__of"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--==================== SKILLS 3 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-calculator-alt skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Analysis Tool</h1>
+                                <span class="skills__subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Zmijewski</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__zmi"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Springate</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__spr"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Grover</h3>
+                                    <span class="skills__number">95%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__gro"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--==================== SKILLS 4 ====================-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-swatchbook skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Software & Design</h1>
+                                <span class="skills__subtitle">More than 5 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Canva</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__canva"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Spreadsheet</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__spreadsheet"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Illustrator</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__illustrator"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Computer & Network Engineering</h3>
+                                <span class="qualification__subtitle">Bogor - Vocational School</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2012 - 2015
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Accounting Management</h3>
+                                <span class="qualification__subtitle">Bogor - Institute of Economic Science</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2022
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Administrator</h3>
+                                <span class="qualification__subtitle">CMB, PT - East Jakarta</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2015 - 2018
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Admin Internship</h3>
+                                <span class="qualification__subtitle">Reg-Gov. - Bogor</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Internship</h3>
+                                <span class="qualification__subtitle">District Court - Bogor</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ANALIZE ====================-->
+        <section class="analize section" id="analize">
+            <h2 class="section__title">Analize</h2>
+            <span class="section__subtitle">What I analyze</span>
+
+            <div class="analize__container container grid">
+                <!--==================== ANALIZE 1 ====================-->
+                <div class="analize__content">
+                    <div class="analize__cardtitle">
+                        <i class="uil uil-comparison analize__icon"></i>
+                        <h3 class="analize__title">Financial <br> Ratios</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link analize__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="analize__modal">
+                        <div class="analize__modal-content">
+                            <h4 class="analize__modal-title">Financial <br> Ratios</h4>
+                            <i class="uil uil-times analize__modal-close"></i>
+
+                            <ul class="analize__modal-analize grid">
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Return on Assets.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Debt to Total Assets Ratio.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Current Ratio.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Working Capital to Total Assets.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Working Basic Earning Power Ratio.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Earning Before Tax to Current Liabilities.
+                                    </p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyzed financial ratios with Sales to Total Assets Ratio.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== ANALIZE 2 ====================-->
+                <div class="analize__content">
+                    <div class="analize__cardtitle">
+                        <i class="uil uil-chart-down analize__icon"></i>
+                        <h3 class="analize__title">Financial Distress <br> Analysis</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link analize__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="analize__modal">
+                        <div class="analize__modal-content">
+                            <h4 class="analize__modal-title">Financial Distress <br> Analysis</h4>
+                            <i class="uil uil-times analize__modal-close"></i>
+
+                            <ul class="analize__modal-analize grid">
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I'm proficient with The Zmijewski Method</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I'm proficient with The Springate Method</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I'm proficient with The Grover Method</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== ANALIZE 3 ====================-->
+                <div class="analize__content">
+                    <div class="analize__cardtitle">
+                        <i class="uil uil-search-alt analize__icon"></i>
+                        <h3 class="analize__title">Analytical <br> Method</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link analize__button">
+                        View More
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="analize__modal">
+                        <div class="analize__modal-content">
+                            <h4 class="analize__modal-title">Analytical <br> Method</h4>
+                            <i class="uil uil-times analize__modal-close"></i>
+
+                            <ul class="analize__modal-analize grid">
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyze the company's financial ratios.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I analyze with various predictive analysis methods.</p>
+                                </li>
+                                <li class="analize__modal-analiz">
+                                    <i class="uil uil-check-circle analize__modal-icon"></i>
+                                    <p>I make decisions in determining the appropriate method of analysis.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent analize</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">What is Financial Distress?</h3>
+                            <p class="portfolio__description">
+                                Financial distress can have severe consequences, including
+                                potential bankruptcy, loss of assets, layoffs, or closure of a business.
+                            </p>
+                            <a href="menu-portfolio/portfolio-1.html"
+                                class="button button--flex button--small portfolio__button">
+                                See more
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">18+ Companies Financial Distress?</h3>
+                            <p class="portfolio__description">
+                                In the following, more than eighteen wholesale sub-sector
+                                companies on the Indonesian stock exchange are analyzed
+                            </p>
+                            <a href="menu-portfolio/portfolio-2.html"
+                                class="button button--flex button--small portfolio__button">
+                                See more
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrow Swiper -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination">
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">Analyze your Finances now!</h2>
+                        <p class="project__description">Contact me now and get a 50% discount on your new project.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/project.png" alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Connect with me</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <!-- 1 -->
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">0851-7217-1304</span>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">iyankusmianto25@gmail.com</span>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">INA-Bogor - Kemang/PrJ. Gardusetu. #23-001/008</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form grid" onsubmit="return sendMail()">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" id="cname" class="contact__input" placeholder="your name" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" id="cemail" class="contact__input" placeholder="your email" required>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Project</label>
+                        <input type="text" id="cproject" class="contact__input" placeholder="your project" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="message" id="cmessage" cols="0" rows="7" class="contact__input"
+                            placeholder="your message" required></textarea>
+                    </div>
+
+                    <div>
+                        <a scr="mail.js" type="submit" class="button button--flex" onclick="sendMail()">
+                            <i class="text--contact-button">Send Message</i>
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Iyan</h1>
+                    <span class="footer__subtitle">Financial Analyst</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#analize" class="footer__link">Analize</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/ryanyadika/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/iyankus_" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/iyankus_" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                ❤️<br>
+                Big thanks!
+                <span><a href="https://github.com/bedimcode/" target="_blank" class="link__decoration">Bedimcode</a>
+                </span><br>
+                &#169; Iyan Kusmianto. All right reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
